@@ -12,16 +12,16 @@ class MyOtherTableViewController: UIViewController {
     
     var delegate : updateInfo?
     
-    
+
     @IBAction func updateFn(sender: UIButton) {
-        let fN = self.firstName.text
-        let lN = self.lastName.text
-        let email = self.emailAddress.text
-        let phNum = self.phoneNumber.text
-        let action = "Update"
-        if let cont : contact = contacts! {
+       // let fN = self.firstName.text
+       // let lN = self.lastName.text
+       // let email = self.emailAddress.text
+       // let phNum = self.phoneNumber.text
+      //  let action = "Update"
+      //  if let cont : contact = contacts {
             
-        }
+       // }
         
         
     }
