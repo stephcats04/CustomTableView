@@ -12,6 +12,11 @@
 		29E56D311D3DABFD009B6F90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E56D2F1D3DABFD009B6F90 /* Main.storyboard */; };
 		29E56D331D3DABFD009B6F90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E56D321D3DABFD009B6F90 /* Assets.xcassets */; };
 		29E56D361D3DABFD009B6F90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29E56D341D3DABFD009B6F90 /* LaunchScreen.storyboard */; };
+		29E56D3E1D3DB78A009B6F90 /* MyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E56D3D1D3DB789009B6F90 /* MyCustomTableViewCell.swift */; };
+		29E56D421D403EEA009B6F90 /* MyOtherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E56D411D403EEA009B6F90 /* MyOtherTableViewController.swift */; };
+		29E67AFD1D43E3810051A5BA /* ContactsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E67AFC1D43E3810051A5BA /* ContactsClass.swift */; };
+		29E67B011D43F8D50051A5BA /* myProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E67B001D43F8D50051A5BA /* myProtocol.swift */; };
+		29E6AC931D4E851C00AC4ED0 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E6AC921D4E851C00AC4ED0 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		29E56D321D3DABFD009B6F90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29E56D351D3DABFD009B6F90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29E56D371D3DABFD009B6F90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29E56D3D1D3DB789009B6F90 /* MyCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		29E56D411D403EEA009B6F90 /* MyOtherTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyOtherTableViewController.swift; sourceTree = "<group>"; };
+		29E67AFC1D43E3810051A5BA /* ContactsClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsClass.swift; sourceTree = "<group>"; };
+		29E67B001D43F8D50051A5BA /* myProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myProtocol.swift; sourceTree = "<group>"; };
+		29E6AC921D4E851C00AC4ED0 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +66,15 @@
 			children = (
 				29E56D2B1D3DABFD009B6F90 /* AppDelegate.swift */,
 				29E56D2D1D3DABFD009B6F90 /* ViewController.swift */,
+				29E56D411D403EEA009B6F90 /* MyOtherTableViewController.swift */,
+				29E6AC921D4E851C00AC4ED0 /* DataManager.swift */,
 				29E56D2F1D3DABFD009B6F90 /* Main.storyboard */,
+				29E56D3D1D3DB789009B6F90 /* MyCustomTableViewCell.swift */,
 				29E56D321D3DABFD009B6F90 /* Assets.xcassets */,
 				29E56D341D3DABFD009B6F90 /* LaunchScreen.storyboard */,
 				29E56D371D3DABFD009B6F90 /* Info.plist */,
+				29E67AFC1D43E3810051A5BA /* ContactsClass.swift */,
+				29E67B001D43F8D50051A5BA /* myProtocol.swift */,
 			);
 			path = CustomTableView;
 			sourceTree = "<group>";
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E56D421D403EEA009B6F90 /* MyOtherTableViewController.swift in Sources */,
+				29E67B011D43F8D50051A5BA /* myProtocol.swift in Sources */,
 				29E56D2E1D3DABFD009B6F90 /* ViewController.swift in Sources */,
+				29E6AC931D4E851C00AC4ED0 /* DataManager.swift in Sources */,
 				29E56D2C1D3DABFD009B6F90 /* AppDelegate.swift in Sources */,
+				29E67AFD1D43E3810051A5BA /* ContactsClass.swift in Sources */,
+				29E56D3E1D3DB78A009B6F90 /* MyCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +269,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GA.mobile.CustomTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +283,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CustomTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GA.mobile.CustomTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +312,7 @@
 				29E56D3C1D3DABFD009B6F90 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
